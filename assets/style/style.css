@@ -1,0 +1,203 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #fdfdfd;
+}
+/*cabeçalho*/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #e9e9e9;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+nav input {
+  background-color: #fff;
+  padding: 10px;
+  width: 110px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+nav input:hover {
+  background-color: #afaeae;
+  color: #fff;
+}
+
+/*container*/
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff4f;
+  padding: 5px;
+  border-radius: 5px;
+}
+.card h3 {
+  font-weight: bolder;
+}
+.card p {
+  font-weight: 600;
+  padding: 10px;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ec652b;
+  color: #f0ffff;
+}
+.card1 a {
+  color: #f0ffff;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #5bb4e1;
+}
+.card2 a {
+  color: #000;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f1e589;
+}
+.card3 a {
+  color: #000;
+}
+
+.mais {
+  display: flex;
+  justify-content: flex-end;
+}
+a {
+  text-decoration: none;
+  padding: 8px;
+}
+.card1 a:hover {
+  background-color: #cc460d;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card2 a:hover {
+  background-color: #088dcf;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card3 a:hover {
+  background-color: #e7d22e;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/*Módulo Noite*/
+.mod-noite {
+  background-color: #0c0b0b;
+  color: #ffffff;
+}
+
+.mod-noite nav {
+  box-shadow: rgba(255, 0, 200, 0.16) 0px 3px 6px,
+    rgba(255, 0, 157, 0.493) 0px 3px 6px;
+  background-color: #383737;
+}
+.mod-noite nav input {
+  background-color: #0c0b0b;
+  color: #ff0077;
+  font-weight: 900;
+}
+.mod-noite nav input:hover {
+  background-color: #ff0077;
+  color: #0c0b0b;
+}
+
+.mod-noite .card1,
+.mod-noite .card2,
+.mod-noite .card3 {
+  background-color: #38373733;
+  border: solid 1px #cc0d76;
+}
+
+.mod-noite .card1 a:hover,
+.mod-noite .card2 a:hover,
+.mod-noite .card3 a:hover {
+  background-color: #383738;
+}
+.mod-noite .card2 a,
+.mod-noite .card3 a {
+  color: #fff;
+}
+
+/*Responsividade*/
+
+@media (max-width: 425px) {
+  .container {
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+  }
+  .card {
+    margin: 0 0 5px 0;
+  }
+  .card1 {
+    margin-top: 60px;
+  }
+  nav {
+    width: 100%;
+    position: fixed;
+    padding: 5px 0 5px 10px;
+  }
+  nav input {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-color-scheme: noite) {
+  html {
+    background-color: #000;
+  }
+}
+
+@media (prefers-color-scheme: dia) {
+}
